@@ -16,7 +16,7 @@ std::vector<unsigned char> readFile(std::ifstream &inputFile) {
 int main(int argc, char* argv[]) {
     srand(time(0));
 	if (argc < 3){
-		std::cout << "Too few arguments. \n\nUsage:\n\t<input_file> <key_file> { -e | -d } <output_file> { -g }" << std::endl;
+		std::cout << "Too few arguments. \n\nUsage:\n\t<input_file> { -e | -d } <output_file> { -g }" << std::endl;
 		return 0;
 	}
 
