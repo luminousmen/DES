@@ -15,16 +15,16 @@ std::vector<unsigned char> readFile(std::ifstream &inputFile) {
 
 int main(int argc, char* argv[]) {
     srand(time(0));
-	if (argc < 3){
-		std::cout << "Too few arguments. \n\nUsage:\n\t<input_file> { -e | -d } <output_file> { -g }" << std::endl;
-		return 0;
-	}
+    if (argc < 3){
+	std::cout << "Too few arguments. \n\nUsage:\n\t<input_file> { -e | -d } <output_file> { -g }" << std::endl;
+	return 0;
+    }
 
-	std::ifstream DesFile(argv[1], std::ios::binary);
-	if (!DesFile) {
-		std::cout << "Error: Unable to open file " << argv[1] << std::endl;
-		return 0;
-	}
+    std::ifstream DesFile(argv[1], std::ios::binary);
+    if (!DesFile) {
+        std::cout << "Error: Unable to open file " << argv[1] << std::endl;
+        return 0;
+    }
 
     std::string operation(argv[2]);
 
