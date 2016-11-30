@@ -41,7 +41,7 @@ int main(int argc, char* argv[]) {
         if (gen == "-g") {
             // generate key
             unsigned char alphabet[] = "abcdefghijklmnopqrstuvwxyz1234567890";
-            char key[8];
+            char key[9];
             for(int i = 0; i < 8; ++i) {
                 key[i] = alphabet[rand() % 36];
                 inputKey.push_back(key[i]);
